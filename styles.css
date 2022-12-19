@@ -1,0 +1,560 @@
+:root {
+    margin: 0px;
+    padding: 0px;
+    --background-gris: #f2f2f2;
+    --colorFoncé: #0065FC;
+    --colorLight: #DEEBFF;
+
+
+}
+
+
+
+body {
+    margin: 0px auto;
+
+    font-family: 'Raleway 400', sans-serif;
+    max-width: 1400px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+h1 {
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    width: 61px;
+}
+
+
+
+#navHebAct {
+
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 30%;
+
+}
+
+.NavHebergement {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+
+}
+
+.NavActivités {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+}
+
+#linkLogo {
+    display: block;
+    padding-top: 51px;
+
+
+}
+
+
+
+.link {
+    padding-top: 64px;
+    width: 100%;
+    text-align: center;
+}
+
+.link:hover {
+
+    padding-top: 61px;
+    border-top: 3px solid var(--colorFoncé);
+
+    color: var(--colorFoncé);
+    font-weight: 500;
+
+
+
+}
+
+
+#recherches {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+    margin-bottom: 10%;
+    appearance: none;
+    width: auto;
+
+
+
+
+}
+
+#recherches-filtre {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+    margin-bottom: 10%;
+    appearance: none;
+    width: auto;
+
+    align-items: center;
+
+
+}
+
+#label {
+    margin-right: 3%;
+
+
+}
+
+
+#maRecherche {
+
+    border: 1px solid #F2F2F2;
+
+    color: rgb(15, 14, 14);
+    padding: 10px;
+    width: 150px;
+
+}
+
+#chercher {
+    background-color: var(--colorFoncé);
+    color: white;
+    border-style: outset;
+    border: #DEEBFF;
+    border-radius: 0% 20px 20px 0%;
+    width: 90px;
+
+}
+
+#geo {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #F2F2F2;
+    width: 50px;
+}
+
+
+
+::placeholder {
+    color: rgb(14, 14, 14);
+    opacity: 1;
+
+    font-weight: 700;
+}
+
+#filtres {
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+
+
+
+
+}
+
+.buttonFiltre:hover {
+    background: #DEEBFF;
+
+
+
+}
+
+.buttonFiltre {
+
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+
+    background-color: white;
+
+    font-family: 'Raleway 400', sans-serif;
+    font-weight: 500;
+    margin-right: 3%;
+    height: 32px;
+
+}
+
+.fa-bleu {
+
+    color: #0065FC;
+}
+
+
+
+#info {
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+
+}
+
+/* encadrement avec la classe fontawsome de l icone info */
+
+.fa-border {
+
+
+    border-radius: 100%;
+    padding: 8px;
+    border: 2px solid #F2F2F2;
+    margin: 40px 10px 40px 0px;
+}
+
+.carte-hebergement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    background-color: rgb(235, 235, 235);
+    width: 60%;
+    border-radius: 20px 20px 20px 20px;
+
+
+
+}
+
+.heb-img-taille {
+
+
+    width: 100%;
+    height:100%;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    margin: 0px auto;
+
+}
+
+.img-cover-heb{
+    width:246px ;
+    height:124px ;
+}
+
+
+
+.heb-description {
+    display: flex;
+    font-size: 14px;
+
+    line-height: 2px;
+
+    flex-direction: column;
+
+    padding: 0 16px;
+
+}
+
+
+
+
+
+
+
+.hebergements-card {
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(255, 255, 255);
+    width: 246px;
+    height: 199px;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
+
+    margin: 0;
+    margin-bottom: 30px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.titre-heb {
+
+    padding: 40px;
+    margin: auto;
+    flex: 100%;
+
+}
+
+/*  les deux éléments (le mot pour deskop+ l’icône pour mobil) en HTML */
+
+.fa-search-mobil {
+    display: none;
+}
+
+.resultat-hebergement {
+
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.carte-popularité {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    background-color: rgb(235, 235, 235);
+
+    border-radius: 20px 20px 20px 20px;
+
+
+    width: 30%;
+
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+
+    border-radius: 20px 20px 20px 20px;
+
+
+
+}
+
+.popularité-card {
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgb(255, 255, 255);
+
+    height: auto;
+    width: auto;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
+
+    align-content: space-between;
+    justify-content: flex-start;
+    flex: 2;
+
+}
+
+.pop-img-taille {
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    margin: 0px auto;
+
+
+
+}
+
+.pop-description {
+    flex-direction: column;
+    display: flex;
+
+    font-size: 14px;
+    margin: 0;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+
+
+
+
+}
+
+.titre-icon-pop {
+
+    display: flex;
+    align-items: baseline;
+    padding: 0 30px;
+
+
+
+
+
+}
+
+.titre-pop {
+
+    flex: 1;
+    margin: 0px 0px;
+    padding-top: 40px;
+}
+
+.plus {
+
+
+    padding: 16px;
+    flex: 100%;
+
+
+}
+
+.fa-gris {
+    color: #e6d8d8;
+}
+
+.cote-etoile {
+
+    padding: 6px;
+
+}
+
+.desc {
+    line-height: 16px;
+}
+
+.img-cover-pop {
+    width: 137px;
+    height: 144px;
+
+}
+
+.act-img-taille {
+
+    width: 100%;
+    height: 100%;
+    border: 0px solid rgb(255, 255, 255);
+
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    margin: 0px auto;
+
+
+
+}
+
+.carte-activité {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 95%;
+
+}
+
+.titre-act {
+    align-items: baseline;
+    flex: 100%;
+
+
+
+}
+
+.activité-card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
+    align-items: flex-start;
+    border: 5px solid #F2F2F2;
+
+    margin: 0 0;
+
+    background-color: white;
+
+
+
+
+
+
+
+
+}
+
+.img-act-cover {
+
+    width: 302px;
+    height: 444.51px;
+
+}
+.footer-booki {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 20px 50px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+.footer-booki-elements {
+    flex: 1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.footer-booki-elements>ul>li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer-booki-elements-titre {
+    flex: 1;
+    padding: 0px 45px;
+
+}
