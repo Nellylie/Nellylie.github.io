@@ -15,55 +15,60 @@
 
 <body>
 
-    <header>
-        <nav>
+    <header class="nav-entete">
+        <nav class="nav-booki">
             <!-- logo dans len pour qu il soit clik eventuellement -->
-            <a id="linkLogo" href="#"><img class="logo" src="ImagesBooki/logo/Booki.png" alt="logo du site Booki "></a>
+            <a class="linkLogo" href="#"><img class="logo" src="ImagesBooki/logo/Booki.png" alt="logo du site Booki "></a>
             <!-- navigation -->
-            <ul id="navHebAct">
+            <ul class="navHebAct">
                 <li class="NavHebergement"><a class="link" href="#hebergement">Hebergements</a></li>
 
-                <li class="NavActivités"><a class="link" href="#">Activités</a></li>
+                <li class="NavActivités"><a class="link" href="#activité">Activités</a></li>
             </ul>
         </nav>
-        <div id="entete">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+        <div class="entete">
+            <h1 class="titre-entete">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="paragraphe-entete">En plein centre ville ou en pleine nature</p>
         </div>
     </header>
-    <main>
+   
 
         <section class="search">
 
-            <form id="recherches" role="search" action="/action_page.php" method="get">
+            <form class="recherches" role="search" action="/action_page.php" method="get">
                 <!-- <button id="geo"><i class="fa-solid fa-location-dot"></i></button> -->
-                <button id="geo" onclick=""><span class="fa-solid fa-location-dot fa-xl"></span></button>
-                <input type="search" id="maRecherche" name="q" placeholder="Marseille, France" size="20">
-                <button id="chercher" name="button" type="submit">Rechercher<span
+                <button class="geo" onclick=""><span class="fa-solid fa-location-dot fa-xl"></span></button>
+                <input type="search" class="maRecherche" name="q" placeholder="Marseille, France" size="20">
+                <button class="chercher" name="button" type="submit">Rechercher<span
                         class="fa-solid fa-magnifying-glass fa-search-mobil"></span></button>
                 <!-- classe fa loupe mis en display none deskop mais display mobil ds le css -->
             </form>
 
-            <form id="recherches-filtre" role="" action="" method="">
-                <label id="label">filtres :</label>
+            <form class="recherches-filtre" role="" action="" method="">
+                <label class="label">Filtres :</label>
                 <button class="buttonFiltre" name="button1" type="button"> <a href="#"><span
-                            class="fa-solid fa-money-bill-wave fa-bleu fa-x1"></span>&nbsp;Economique</a></button>
+                            class="fa-solid fa-money-bill-wave fa-bleu fa-x1 icone-position" ></span><div class="filtre-titre">Economique</div></a></button>
                 <button class="buttonFiltre" name="button2" type="button"><a href="#"><span
-                            class="fa-solid fa-person fa-bleu fa-x1 "></span>&nbsp;Familial</a></button>
+                            class="fa-solid fa-person fa-bleu fa-x1 icone-position"></span><div class="filtre-titre">Familial</div></a></button>
                 <button class="buttonFiltre" name="button3" type="button"><a href="#"><span
-                            class="fa-solid fa-heart fa-bleu fa-x1"></span>&nbsp;Romantique</a></button>
+                            class="fa-solid fa-heart fa-bleu fa-x1 icone-position"></span><div class="filtre-titre">Romantique</div></a></button>
                 <button class="buttonFiltre" name="button4" type="button"><a href="#"><span
-                            class="fa-solid fa-dog fa-bleu fa-x1"></span>&nbsp;Animaux autorisés </a></button>
+                            class="fa-solid fa-dog fa-bleu fa-x1 icone-position"></span><div class="filtre-titre">Animaux autorisés</div> </a></button>
             </form>
         </section>
-
-
-
-        <div id="info"><span id="cadreI"> <span class="fa-solid fa-info fa-bleu fa-xs fa-border"></span></span>
-            <p>Plus de 500 logements sont libres dans cette ville</p>
+        <div class="info"> <span class="fa-solid fa-info fa-bleu fa-xs fa-border-padding fa-border fa-pull-margin "data-fa-transform="shrink-8"  ></span>
+            <h2 class="titre-resultat-heb">Plus de 500 logements sont libres dans cette ville</h2>
+       
         </div>
 
-        <section class="resultat-hebergement">
+       
+            
+
+        <section id="hebergement" class="resultat-hebergement">
+          
+
+
+
 
             <article class="carte-hebergement">
                 <h3 class="titre-heb">Hébergements à Marseille</h3>
@@ -265,7 +270,7 @@
             </article>
 
 
-            <article class="carte-popularité">
+            <aside class="carte-popularité">
                 <div class="titre-icon-pop">
                     <h3 class="titre-pop">Les plus populaires</h3><i class="fa-solid fa-chart-line fa-bleu"></i>
                 </div>
@@ -377,13 +382,14 @@
                     </figure>
                 </a>
 
-            </article>
+            </aside>
+            </section>
 
-            <article class="carte-activité">
+            <article id="activité" class="carte-activité">
 
                 <h3 class="titre-act">Activités à Marseille</h3>
 
-
+           <div class="groupe-articles">
                 <a href="#">
                     <figure class="activité-card">
                         <div class="img-act-cover"><img class="act-img-taille"
@@ -457,13 +463,13 @@
 
                         </figcaption>
                     </figure>
-                </a>
+                </a></div> 
 
             </article>
 
-        </section>
-
-    </main>
+       
+    
+   
     <footer class="footer-booki">
         <div class="footer-booki-elements">
             <div class="footer-booki-elements-titre">
