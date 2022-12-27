@@ -434,6 +434,7 @@ margin:auto 0px auto 5px;
     display: flex;
     justify-content: space-between;
     margin:2%;
+    gap:30px;
 }
 
 .carte-popularité {
@@ -867,17 +868,17 @@ padding:5px;
     
     
     
-    .filtres {
+     /* .filtres { 
     
         display: flex;
         flex-direction: row;
         align-items: baseline;
     
-        flex-grow: 1;
+        flex-grow: 1; */
+     
     
     
     
-    }
     .label {
     
         flex-shrink: 1;
@@ -982,7 +983,7 @@ padding:5px;
     
     .carte-hebergement>a{
         flex:25%;
-        margin:2%;
+        margin:10px 20px;
     
     
     }
@@ -1029,7 +1030,7 @@ padding:5px;
     
         display: flex;
         flex-direction: column;
-    
+        width:100%;
         background-color: rgb(255, 255, 255);
         flex: 1;
         border: 5px solid white;
@@ -1065,9 +1066,9 @@ padding:5px;
     
     
     .titre-heb {
-    
-      margin: 40px auto;
-        width: 90%;
+      
+      margin: 20px auto;
+        width: 95%;
         height: auto;
     
     }
@@ -1313,13 +1314,6 @@ padding:5px;
     
     /* css mobil */
 @media (max-width: 768px) {
-    
-    .loupe {
-        display:block;}
-    .rechercher{
-        display: none;
-    }
-
 
 
 
@@ -1333,7 +1327,7 @@ padding:5px;
         background-color: white;
     
      
-        width: 90%;
+        width: 100%;
     
     }
     
@@ -1342,7 +1336,8 @@ padding:5px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 250px;
+        height: auto;
+        margin:30px;
     }
     
     a {
@@ -1421,15 +1416,16 @@ padding:5px;
     
     .link {
         margin-top:80px;
-        padding-bottom: 64px;
+        padding-bottom: 30px;
         width: 100%;
         text-align: center;
         border-bottom: 3px solid #f2f2f2;
+        margin-bottom:20px;
     }
     
     .link:active{
     
-        padding-bottom: 61px;
+        padding-bottom: 30px;
         border-bottom: 3px solid #0065FC;
     
         color: #0065FC;
@@ -1439,15 +1435,21 @@ padding:5px;
     
     }
     
-    
+    main{
+        width:100%;
+
+
+    }
     
     .search {
     
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        height: 120px;
+        justify-content: center;
+        height: auto;
+        margin:auto;
+        width:90%;
+    
     
     }
     
@@ -1460,8 +1462,8 @@ padding:5px;
         align-content: flex-start;
     
         appearance: none;
-        width: 70%;
-    
+        width: 100%;
+        height:auto;
     
     
     
@@ -1474,8 +1476,9 @@ padding:5px;
         border-style: outset;
         border: #DEEBFF;
         border-radius: 0% 20px 20px 0%;
-        width: 115px;
+        
     font-size: 16px;
+    display:none;
     }
     .loupe {   background-color: #0065FC;
         color: white;
@@ -1483,7 +1486,8 @@ padding:5px;
         border: #DEEBFF;
         border-radius: 0% 20px 20px 0%;
         width: 90px;
-        display: none;
+        display: block;
+        flex:0.5;
     }
     
     
@@ -1494,10 +1498,11 @@ padding:5px;
     .maRecherche {
     
         border: 1px solid #F2F2F2;
-    
+        flex:2;
         color: rgb(15, 14, 14);
         padding: 10px;
-        width: 150px;
+        width: 100%;
+        height:70px;
     
     }
     
@@ -1505,7 +1510,7 @@ padding:5px;
     .geo {
         border-radius: 20px 0 0 20px;
         border: 1px solid #F2F2F2;
-        width: 50px;
+        flex:0.5;
     }
     
     
@@ -1518,18 +1523,11 @@ padding:5px;
     }
     
     .recherches-filtre {
+        margin-top:30px;
         display: flex;
-    
         flex-wrap: wrap;
-    
-    
-    
-        appearance: none;
-    
-        min-width:700px;
-        align-items: center;
+        width: 90%;
         justify-content: space-between;
-        width: 55%;
     }
     
     
@@ -1538,17 +1536,13 @@ padding:5px;
     .filtres {
     
         display: flex;
+       
         flex-direction: row;
-        align-items: baseline;
-    
-        flex-grow: 1;
-    
     
     
     }
     .label {
-    
-        flex-shrink: 1;
+        width:100%;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
     
@@ -1562,15 +1556,17 @@ padding:5px;
         border: 2px solid #f2f2f2;
         border-radius: 20px;
         background-color: white;
-    
+        
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
-    
+        width:40%;
+        min-width:150px;
         height: 42px;
+        margin:10px 0;
     
     }
     
-    .buttonFiltre:hover {
+    .buttonFiltre:active {
         background: #DEEBFF;
     
     
@@ -1581,22 +1577,24 @@ padding:5px;
     
     .buttonFiltre>a{
         display:flex;
-        justify-content: center;
-        text-align: center;
+        justify-content: start;
+        text-align: left;
     
     }
     
     .filtre-titre{
         font-family: 'Raleway', sans-serif;
-        font-size:16px;
+        white-space: nowrap;
+        font-size:11px;
         font-weight: 700;
         flex:1;
-    margin:auto 15px;
+        padding-left:1px;
+    margin:auto 5px;
     
     }
     
     .icone-position{
-    margin:auto 0px auto 5px;
+    margin:auto 0px auto 10px;
     
     
     }
@@ -1618,7 +1616,7 @@ padding:5px;
     }
     
     .info {
-        margin:30px 0px;
+        margin:30px 30px;
         width: 100%;
         display: flex;
         justify-content: flex-start;
@@ -1634,13 +1632,14 @@ padding:5px;
     
     
     .carte-hebergement {
+        order:2;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap:wrap;
-    
-        justify-content: space-around;
-        background-color: rgb(235, 235, 235);
-      
+        width:100%;
+        justify-content:center;
+        background-color: rgb(255, 255, 255);
+        margin:auto;
         border-radius: 20px 20px 20px 20px;
        
     
@@ -1650,8 +1649,8 @@ padding:5px;
     
     .carte-hebergement>a{
         flex:25%;
-        margin:2%;
-    
+        margin:2% 30px;
+        height:auto;
     
     }
     
@@ -1669,7 +1668,7 @@ padding:5px;
     
     .img-cover-heb {
         width: 100%;
-        height: 124px;
+        height: 130px;
     }
     
     
@@ -1703,7 +1702,7 @@ padding:5px;
         border: 5px solid white;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
-    
+        height:auto;
         margin: 0;
         margin-bottom: 30px;
     
@@ -1752,21 +1751,21 @@ padding:5px;
     }
     
     .carte-popularité {
-        margin-top: 10%;
+        order:1;
         width:100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         background-color: rgb(235, 235, 235);
         border-radius: 20px 20px 20px 20px;
-        justify-content: space-evenly;
-        margin-top:20px auto;
+        justify-content: center;
+        margin:20px auto;
         background-color: rgb(235, 235, 235);
         border-radius: 20px 20px 20px 20px;
     }
     .carte-popularité>a{
-        width:30%;
-        margin:auto 10px;
+        width:90%;
+        margin:auto;
+        
     }
     
     
@@ -1790,7 +1789,7 @@ padding:5px;
         font-size: 14px;
         margin: 0;
         justify-content: space-between;
-        width: 55%;
+        width: 100%;
         height:144px;
         margin:5px;
     
@@ -1803,8 +1802,10 @@ padding:5px;
     
         display: flex;
         align-items: baseline;
-        padding: 0 30px;
-        width:100%;
+        width:90%;
+        margin:auto 30px;
+        box-sizing: border-box;
+        
     
     
     
@@ -1822,7 +1823,7 @@ padding:5px;
     .plus {
     margin: 40px 0px 40px 40px;
     
-    
+    display:none;
         flex: 100%;
     
     
@@ -1847,7 +1848,7 @@ padding:5px;
     
     }
     .img-cover-pop {
-        width: 35%;
+        width: 80%;
         height: 144px;
        
     
@@ -1877,28 +1878,29 @@ padding:5px;
     .titre-act {
         align-items: baseline;
         flex: 100%;
-        margin:50px 0px;
+        margin:50px 30px;
     
     
     }
     
     .groupe-articles{
         display:flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         flex-wrap:nowrap;
+        margin:auto;
         width:100%;
         
     }
     
     .groupe-articles>a{
         display:flex;
-        width:302px;
+        width:90%;
         
         overflow:hidden;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.274);
-        margin:10px 10px;
+        margin:10px auto;
     }
     
     .act-description{
@@ -1918,7 +1920,7 @@ padding:5px;
         justify-content: center;
         align-content: center;
         width:100%;
-        height:267px;
+        height:200px;
         margin:0px auto;
         background-color: white;
     
@@ -1927,17 +1929,18 @@ padding:5px;
     .img-act-cover {
         flex:1;
         align-self:center;
-        width: 302px;
-        height: 200px;
+        width: 100%;
+        height: 50%;
     
     }
     
     .footer-booki {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         width: 100%;
         background-color: #F2F2F2;
-        padding: 20px 50px;
+        padding: 20px 0px;
         margin-top: 70px;
         margin-bottom: 0px;
         box-sizing: border-box;
