@@ -1760,11 +1760,11 @@ padding:5px;
         display: flex;
         flex-direction: column;
         background-color: rgb(235, 235, 235);
-        border-radius: 20px 20px 20px 20px;
+        
         justify-content: center;
         margin:20px auto;
-        background-color: rgb(235, 235, 235);
-        border-radius: 20px 20px 20px 20px;
+      
+       
     }
     .carte-popularité>a{
         width:80%;
